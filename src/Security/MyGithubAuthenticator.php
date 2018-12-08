@@ -20,6 +20,7 @@ use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\Security;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class MyGithubAuthenticator extends SocialAuthenticator
 {
@@ -65,6 +66,8 @@ class MyGithubAuthenticator extends SocialAuthenticator
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
 
+        $session = new Session();
+        $session->set('createntials', $credentials);
         return $userProvider->loadUserByUsername($this->getGithubClient()->fetchUserFromToken($credentials)->getId());
     }
 
