@@ -83,8 +83,32 @@
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.5.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "knpuniversity/oauth2-client-bundle": {
+        "version": "1.20",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.20",
+            "ref": "80acc9223a205cbf5d9828fd616c82a374d281dd"
+        }
+    },
+    "league/oauth2-client": {
+        "version": "2.4.1"
+    },
+    "league/oauth2-github": {
+        "version": "2.0.0"
     },
     "monolog/monolog": {
         "version": "1.24.0"
@@ -110,6 +134,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.0.0"
     },
@@ -118,6 +145,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "2.0.5"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -390,6 +420,15 @@
             "branch": "master",
             "version": "3.3",
             "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
+        }
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "dd76e869a5d10fac29f4c0c02f8feaac613471ff"
         }
     },
     "symfony/yaml": {

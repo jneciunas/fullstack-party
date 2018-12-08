@@ -10,10 +10,16 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Security\Core\Security;
 
 class Application  extends Controller
 {
-    function index(){
+    function index(Security $security){
+        var_dump($security->getUser());
         return $this->render('application/index.html.twig');
+    }
+
+    function list(){
+
     }
 }

@@ -1,3 +1,12 @@
 index:
     path: /
     controller: App\Controller\Application::index
+list:
+    path: /list
+    controller: App\Controller\Application::list
+github_connect:
+    path: /github-connect
+    controller: App\Controller\Github::connect
+github_callback:
+    path: /github-callback
+    controller: App\Controller\Github::callback
